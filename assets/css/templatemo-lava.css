@@ -873,79 +873,47 @@ testimonials
 #testimonials .item {
   position: relative;
 }
+#testimonials .item {
+  margin-left: 30px;
+  padding: 0;
+}
 
-#testimonials .item .testimonial-content {
-  background-image:url(../images/certificate-1.jpeg);
-  background-size : cover;
-  background-position : center;
-  margin-left: 60px;
-  padding: 150px 150px;
+#testimonials .item .testimonial-content,
+#testimonials .item .testimonial-content-1,
+#testimonials .item .testimonial-content-2,
+#testimonials .item .testimonial-content-3,
+#testimonials .item .testimonial-content-4,
+#testimonials .item .testimonial-content-5,
+#testimonials .item .testimonial-content-6,
+#testimonials .item .testimonial-content-7,
+#testimonials .item .testimonial-content-8 {
+  position: relative;
   text-align: center;
   border-radius: 5px;
+  overflow: hidden;
 }
-#testimonials .item .testimonial-content-1{
-  background-image:url(../images/certificate-2.jpeg);
-  background-size : cover;
-  background-position : center;
-  margin-left: 30px;
-  padding: 150px 150px;
+
+#testimonials .item .testimonial-content img,
+#testimonials .item .testimonial-content-1 img,
+#testimonials .item .testimonial-content-2 img,
+#testimonials .item .testimonial-content-3 img,
+#testimonials .item .testimonial-content-4 img,
+#testimonials .item .testimonial-content-5 img,
+#testimonials .item .testimonial-content-6 img,
+#testimonials .item .testimonial-content-7 img,
+#testimonials .item .testimonial-content-8 img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
-#testimonials .item .testimonial-content-2{
-  background-image:url(../images/certificate-3.jpeg);
-  background-size : cover;
-  background-position : center;
-  margin-left: 30px;
-  padding: 150px 150px;
+
+#testimonials .item .author i img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
-#testimonials .item .testimonial-content-3{
-  background-image:url(../images/certificate-4.jpeg);
-  background-size : cover;
-  background-position : center;
-  margin-left: 30px;
-  padding: 150px 150px;
-}
-#testimonials .item .testimonial-content-4{
-  background-image:url(../images/certificate-5.jpeg);
-  background-size : cover;
-  background-position : center;
-  margin-left: 30px;
-  padding: 150px 150px;
-}
-#testimonials .item .testimonial-content-5{
-  background-image:url(../images/certificate-6.jpeg);
-  background-size : cover;
-  background-position : center;
-  margin-left: 30px;
-  padding: 150px 150px;
-}
-#testimonials .item .testimonial-content-6{
-  background-image:url(../images/certificate-7.jpeg);
-  background-size : cover;
-  background-position : center;
-  margin-left: 30px;
-  padding: 150px 150px;
-}
-#testimonials .item .testimonial-content-7{
-  background-image:url(../images/certificate-8.jpeg);
-  background-size : cover;
-  background-position : center;
-  margin-left: 30px;
-  padding: 150px 150px;
-}
-#testimonials .item .testimonial-content-8{
-  background-image:url(../images/certificate-9.jpg);
-  background-size : cover;
-  background-position : center;
-  margin-left: 30px;
-  padding: 150px 150px;
-}
-#testimonials .item .testimonial-content-9{
-  background-image:url(../images/award.jpeg);
-  background-size : cover;
-  background-position : center;
-  margin-left: 30px;
-  padding: 200px 150px;
-}
+
 #testimonials .item .testimonial-content ul li {
   display: inline-block;
   margin: 0px 1px;
@@ -1368,4 +1336,50 @@ body {
 }
 
 /* newly added*/
+.custom-image-gallery {
+  display: flex;
+  justify-content: center; /* Center images horizontally */
+  gap: 2cm; /* 2 cm gap between images */
+  margin-top: 150px; /* Reasonable gap from the top */
+}
 
+.custom-image-item {
+  text-align: center;
+  width: 200px; /* Adjusted width to fit better */
+}
+
+.custom-image-container {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-image-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.custom-title {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Floating animation */
+.custom-image-container:hover {
+  transform: translateY(-10px);
+}
+
+.custom-image-container img:hover {
+  transform: scale(1.1);
+}
